@@ -7,12 +7,13 @@ namespace TortillaMaker.Models
 {
     public class Order
     {
-        public int Id { get; set; }
-        public int UserId { get; set; }
+        public int? Id { get; set; }
         public User User { get; set; }
-        public int MenuId { get; set; }
         public Menu Menu { get; set; }
         public enum Status { Sent, Received, PickUp};
         public Status Update { get; set; }
+        public DateTime Time { get; set; }
+        public int Cost { get; set; }
+        public int Quantity { get; set; }
     }
 }

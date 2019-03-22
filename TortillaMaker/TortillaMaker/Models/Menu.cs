@@ -7,10 +7,8 @@ namespace TortillaMaker.Models
 {
     public class Menu
     {
-        public int Id { get; set; }
-        public string Flour { get; set; }
-        public string Wheat { get; set; }
-        public string Corn { get; set; }
-        public string FlourCorn { get; set; }
+        public int? Id { get; set; }
+        public enum Type { Flour, Wheat, Corn, FlourCorn }
+        public Type TortillaType { get; set; }
     }
 }

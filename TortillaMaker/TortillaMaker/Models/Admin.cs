@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace TortillaMaker.Models
 {
-    [Table("User")]
-    public class User
+    [Table("Admin")]
+    public class Admin
     {
         public int? Id { get; set; }
-        public string FirstName { get; set; }
-        public string LastInitialS { get; set; }
+        public string Name { get; set; }
     }
 }
